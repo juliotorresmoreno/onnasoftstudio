@@ -91,21 +91,6 @@ export function About() {
                     <div className="flex justify-center">
                       <svg
                         className="flex justify-center items-center bg-green-600 dark:bg-green-700 h-7 mr-2 p-1 rounded-full rtl:ml-2 rtl:mr-0 text-gray-50 w-7"
-                        data-icon="tabler:brand-medium"
-                        height="1em"
-                        viewBox="0 0 24 24"
-                        width="1em"
-                      >
-                        <use xlinkHref="#ai:tabler:brand-medium" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex flex-row max-w-none">
-                    <div className="flex justify-center">
-                      <svg
-                        className="flex justify-center items-center bg-green-600 dark:bg-green-700 h-7 mr-2 p-1 rounded-full rtl:ml-2 rtl:mr-0 text-gray-50 w-7"
                         data-icon="tabler:brand-linkedin"
                         height="1em"
                         viewBox="0 0 24 24"

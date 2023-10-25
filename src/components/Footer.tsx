@@ -41,35 +41,6 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="https://medium.com/@jtorres990"
-                className="text-muted text-sm dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 inline-flex items-center p-2.5 rounded-lg"
-                aria-label="Medium"
-              >
-                <svg
-                  className="h-5 w-5"
-                  data-icon="tabler:brand-medium"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                >
-                  <symbol id="ai:tabler:brand-medium">
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                    >
-                      <path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
-                      <path d="M8 9h1l3 3l3-3h1m-8 6h2m4 0h2M9 9v6m6-6v6" />
-                    </g>
-                  </symbol>
-                  <use xlinkHref="#ai:tabler:brand-medium" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
                 href={config.GITHUB}
                 className="text-muted text-sm dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 inline-flex items-center p-2.5 rounded-lg"
                 aria-label="Github"
