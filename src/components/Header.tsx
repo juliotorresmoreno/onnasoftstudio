@@ -24,7 +24,7 @@ export function Header() {
       <div className="absolute inset-0" />
       <div className="relative mx-auto max-w-7xl md:px-6 text-default md:flex md:justify-between px-3 py-3 w-full">
         <div className="flex justify-between">
-          <Link href="/" className="flex items-center">
+          <a href="/#" className="flex items-center">
             <span className="font-bold dark:text-white text-2xl md:text-xl ml-2 rtl:ml-0 rtl:mr-2 self-center text-gray-900 whitespace-nowrap">
               <Image
                 alt=""
@@ -41,7 +41,7 @@ export function Header() {
               />{" "}
               &nbsp;{config.NAME}
             </span>
-          </Link>
+          </a>
           <div className="flex items-center md:hidden">
             <button
               aria-label="Toggle Menu"

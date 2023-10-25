@@ -46,7 +46,72 @@ export function About() {
                   ever-evolving tech landscape.
                 </p>
               </div>
+
+
+
               <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 lg:grid-cols-3 sm:grid-cols-2">
+                
+                
+
+
+              <div>
+                  <div className="flex flex-row max-w-none">
+                    <div className="flex justify-center">
+                      <svg
+                        className="flex justify-center items-center bg-green-600 dark:bg-green-700 h-7 mr-2 p-1 rounded-full rtl:ml-2 rtl:mr-0 text-gray-50 w-7"
+                        data-icon="tabler:brand-linkedin"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <use xlinkHref="#ai:tabler:brand-linkedin" />
+                      </svg>
+                    </div>
+                    <div className="mt-0.5">
+                      <div className="rtl:ml-0 ml-2 rtl:mr-2 dark:text-white font-medium leading-6 text-lg">
+                        <a
+                          href={config.LINKEDIN}
+                          className="cursor-pointer hover:text-primary"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Linkedin
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div>
+                  <div className="flex flex-row max-w-none">
+                    <div className="flex justify-center">
+                      <svg
+                        className="flex justify-center items-center bg-green-600 dark:bg-green-700 h-7 mr-2 p-1 rounded-full rtl:ml-2 rtl:mr-0 text-gray-50 w-7"
+                        data-icon="tabler:brand-github"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <use xlinkHref="#ai:tabler:brand-github" />
+                      </svg>
+                    </div>
+                    <div className="mt-0.5">
+                      <div className="rtl:ml-0 ml-2 rtl:mr-2 dark:text-white font-medium leading-6 text-lg">
+                        <a
+                          href={config.GITHUB}
+                          className="cursor-pointer hover:text-primary"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Github
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
                 <div>
                   <div className="flex flex-row max-w-none">
                     <div className="flex justify-center">
@@ -86,33 +151,17 @@ export function About() {
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div className="flex flex-row max-w-none">
-                    <div className="flex justify-center">
-                      <svg
-                        className="flex justify-center items-center bg-green-600 dark:bg-green-700 h-7 mr-2 p-1 rounded-full rtl:ml-2 rtl:mr-0 text-gray-50 w-7"
-                        data-icon="tabler:brand-linkedin"
-                        height="1em"
-                        viewBox="0 0 24 24"
-                        width="1em"
-                      >
-                        <use xlinkHref="#ai:tabler:brand-linkedin" />
-                      </svg>
-                    </div>
-                    <div className="mt-0.5">
-                      <div className="rtl:ml-0 ml-2 rtl:mr-2 dark:text-white font-medium leading-6 text-lg">
-                        <a
-                          href={config.LINKEDIN}
-                          className="cursor-pointer hover:text-primary"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          Linkedin
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+
+
+
+
+
+                
+
+
+
+
               </div>
             </div>
             <div className="md:basis-1/2 md:mt-0 mt-10" aria-hidden="true">

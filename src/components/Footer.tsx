@@ -66,6 +66,35 @@ export function Footer() {
                 </svg>
               </a>
             </li>
+            <li>
+              <a
+                href={config.YOUTUBE}
+                className="text-muted text-sm dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 inline-flex items-center p-2.5 rounded-lg"
+                aria-label="Linkedin"
+              >
+                <svg
+                  className="h-5 w-5"
+                  data-icon="tabler:brand-youtube"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <symbol id="ai:tabler:brand-youtube">
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                    >
+                      <path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4 5v5m0-8v.01M12 16v-5" />
+                      <path d="M16 16v-3a2 2 0 0 0-4 0" />
+                    </g>
+                  </symbol>
+                  <use xlinkHref="#ai:tabler:brand-youtube" />
+                </svg>
+              </a>
+            </li>
           </ul>
           <div className="mr-4 dark:text-slate-400 text-sm">
             Made by {config.NAME}· All rights reserved.
