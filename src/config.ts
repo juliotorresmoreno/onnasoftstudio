@@ -1,5 +1,6 @@
 const config = {
   NAME: process.env.NAME ?? "",
+  TITLE: process.env.TITLE ?? "",
   PHONE: process.env.PHONE ?? "",
   EMAIL: process.env.EMAIL ?? "",
   LINKEDIN: process.env.LINKEDIN ?? "",

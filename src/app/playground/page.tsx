@@ -4,12 +4,13 @@ import { Header } from "@/components/Header";
 import Head from "next/head";
 import Image from "next/image";
 import buildingSrc from "../../assets/building-3.png";
+import config from "@/config";
 
 export default function Page() {
   return (
     <>
       <Head>
-        <title>Playground: Pioneering the Future of Technology and AI</title>
+        <title>Playground: {config.TITLE}</title>
         <meta
           content="Unleash your creativity and experiment with cutting-edge technology in our Playground, where you can tinker with frontend, backend, cloud, and AI tools."
           name="description"

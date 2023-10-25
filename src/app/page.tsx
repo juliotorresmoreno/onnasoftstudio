@@ -14,7 +14,9 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>{config.NAME}: Pioneering the Future of Technology and AI</title>
+        <title>
+          {config.NAME}: {config.TITLE}
+        </title>
         <meta
           content={`Welcome to this website where you'll delve into the captivating realm of technology and artificial intelligence (AI) through the eyes of ${config.NAME}. I am a passionate software developer with a forward-thinking approach and a deep understanding of artificial intelligence. He's a visionary in the technology world, on a mission to drive intelligent solutions for today's most pressing challenges.`}
           name="description"

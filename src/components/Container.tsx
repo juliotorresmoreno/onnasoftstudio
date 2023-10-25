@@ -1,4 +1,3 @@
-import { AppProps } from "next/app";
 
 export function Container({ children }: React.PropsWithChildren) {
   return (

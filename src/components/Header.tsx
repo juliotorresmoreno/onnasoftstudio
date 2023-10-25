@@ -106,7 +106,7 @@ export function Header() {
             </li>
             <li>
               <Link
-                href="/#contact"
+                href="/contact"
                 className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3"
               >
                 Contact
