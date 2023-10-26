@@ -41,20 +41,20 @@ const toolbarOpts = {
 
 type EditorProps = {
   defaultValue?: string;
-  onChangge?: (value: string) => void;
+  onChange?: (value: string) => void;
   editorStyle?: React.CSSProperties;
 };
 
 export function Editor({
   defaultValue = "",
-  onChangge = () => {},
+  onChange = () => {},
   editorStyle,
 }: EditorProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
 
   const onEditorStateChange = (editorState: EditorState) => {
-    onChangge(editorState.getCurrentContent().getPlainText());
+    onChange(editorState.getCurrentContent().getPlainText());
     setEditorState(editorState);
   };
 

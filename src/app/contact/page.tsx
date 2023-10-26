@@ -4,36 +4,17 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Head from "next/head";
 import config from "@/config";
-import useInputForm from "@/hocks/useInputForm";
 import { Editor } from "@/components/Editor";
-
-const template = `
-Dear [Recipient's Name],
-
-I hope this message finds you well. I'd like to connect with you for the purpose of [state the reason or interest for connecting, e.g., discussing collaboration opportunities, sharing ideas, or any other purpose].
-
-Here are my contact details:
-- Name: [Your Name]
-- Email: [Your Email]
-- Phone Number: [Your Phone Number]
-- Profile on [Platform/ Social Network Name]: [Link to Your Profile]
-
-I'm interested in [briefly describe your interest or goal]. I believe that we could have a fruitful conversation, and I'm excited about the possibility of collaborating.
-
-Please let me know if you're available to talk, or if you prefer to communicate via email or another medium. I look forward to hearing from you soon.
-
-Additionally, here are some relevant links for your reference:
-1. [Insert Link 1]
-2. [Insert Link 2]
-3. [Insert Link 3]
-`;
+import contactTemplate from "@/templates/contact";
+import { useState } from "react";
 
 const editorStyle: React.CSSProperties = {
   height: 500,
 };
 
 export default function Page() {
-  const [description, descriptionEventHandler] = useInputForm(template);
+  const template = contactTemplate;
+  const [description, setDescription] = useState(template);
   return (
     <>
       <Head>
@@ -68,7 +49,11 @@ export default function Page() {
             <div className="flex flex-col max-w-3xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
               <form>
                 <div>
-                  <Editor defaultValue={template} editorStyle={editorStyle} />
+                  <Editor
+                    defaultValue={template}
+                    onChange={setDescription}
+                    editorStyle={editorStyle}
+                  />
                 </div>
                 <div className="mt-3 flex items-start">
                   <div className="flex mt-0.5">
