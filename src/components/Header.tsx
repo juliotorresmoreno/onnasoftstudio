@@ -39,7 +39,7 @@ export function Header() {
                 }}
                 width={64}
               />{" "}
-              &nbsp;{config.NAME}
+              &nbsp;Home
             </span>
           </a>
           <div className="flex items-center md:hidden">
@@ -76,7 +76,7 @@ export function Header() {
           aria-label="Main navigation"
           className={
             classNames({ hidden: !isOpen }) +
-            " w-full md:w-auto items-center md:flex md:mx-5 md:overflow-x-auto md:overflow-y-visible overflow-x-hidden overflow-y-auto text-default"
+            " w-full md:w-auto items-center md:flex md:mx-5 overflow-x-hidden overflow-y-auto text-default"
           }
         >
           <ul className="flex flex-col font-medium md:flex-row md:self-center md:text-[0.9375rem] md:w-auto text-xl tracking-[0.01rem] w-full">
@@ -132,7 +132,7 @@ export function Header() {
         </nav>
         <div className="flex items-center md:w-auto w-full bottom-0 fixed hidden justify-end left-0 md:flex md:mb-0 md:p-0 md:self-center md:static p-3 rtl:left-auto rtl:right-0">
           <div className="flex items-center md:w-auto w-full justify-between">
-            <div className="flex" />
+            <div className="flex"></div>
           </div>
         </div>
       </div>

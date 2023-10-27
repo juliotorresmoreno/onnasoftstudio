@@ -31,11 +31,7 @@ const toolbarOpts = {
     className: undefined,
     component: undefined,
     dropdownClassName: undefined,
-    options: ["unordered", "ordered", "indent", "outdent"],
-    unordered: true,
-    ordered: true,
-    indent: true,
-    outdent: true,
+    options: ["unordered", "ordered"],
   },
 };
 
@@ -54,7 +50,8 @@ export function Editor({
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
 
   const onEditorStateChange = (editorState: EditorState) => {
-    onChange(editorState.getCurrentContent().getPlainText());
+    const txt = editorState.getCurrentContent().getPlainText();
+    onChange(txt);
     setEditorState(editorState);
   };
 

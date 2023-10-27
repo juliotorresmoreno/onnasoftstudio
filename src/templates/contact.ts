@@ -1,5 +1,5 @@
 
-const contactTemplate = `Dear [Recipient's Name],
+const contactTemplate = `Dear,
 
 I hope this message finds you well. I'd like to connect with you for the purpose of [state the reason or interest for connecting, e.g., discussing collaboration opportunities, sharing ideas, or any other purpose].
 

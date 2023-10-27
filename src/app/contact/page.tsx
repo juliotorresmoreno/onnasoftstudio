@@ -1,12 +1,14 @@
 "use client";
 
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { useState } from "react";
 import Head from "next/head";
 import config from "@/config";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { Editor } from "@/components/Editor";
+import { Button } from "@/components/ui/button";
 import contactTemplate from "@/templates/contact";
-import { useState } from "react";
+import { GoogleAnalytics } from "@/components/GoogleAnalitics";
 
 const editorStyle: React.CSSProperties = {
   height: 500,
@@ -14,7 +16,27 @@ const editorStyle: React.CSSProperties = {
 
 export default function Page() {
   const template = contactTemplate;
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [terms, setTerms] = useState(false);
   const [description, setDescription] = useState(template);
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ terms, description }),
+    });
+    if (res.ok) {
+      alert("Message sent successfully!");
+    } else {
+      alert("Message failed to send!");
+    }
+  };
   return (
     <>
       <Head>
@@ -47,7 +69,7 @@ export default function Page() {
               </p>
             </div>
             <div className="flex flex-col max-w-3xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
-              <form>
+              <form onSubmit={onSubmit}>
                 <div>
                   <Editor
                     defaultValue={template}
@@ -61,6 +83,8 @@ export default function Page() {
                       id="disclaimer"
                       name="disclaimer"
                       type="checkbox"
+                      checked={terms}
+                      onChange={(e) => setTerms(e.target.checked)}
                       className="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
                     />
                   </div>
@@ -75,9 +99,13 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="mt-10 grid">
-                  <button className="btn-primary" type="submit">
+                  <Button
+                    className="bg-primary text-white hover:bg-primary-2"
+                    disabled={!terms}
+                    type="submit"
+                  >
                     Contact us
-                  </button>
+                  </Button>
                 </div>
                 <div className="mt-3 text-center">
                   <p className="text-sm text-gray-600 dark:text-gray-400">
