@@ -5,8 +5,8 @@ generator client {
 }
 
 datasource db {
-    provider  = "postgresql"
-    url       = env("DATABASE_URL")
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
 }
 
 model Post {
@@ -16,6 +16,8 @@ model Post {
     published Boolean @default(false)
     author    User?   @relation(fields: [authorId], references: [id])
     authorId  String?
+
+    @@map(name: "posts")
 }
 
 model Message {
@@ -23,6 +25,8 @@ model Message {
     content  String
     author   User?   @relation(fields: [authorId], references: [id])
     authorId String?
+
+    @@map(name: "messages")
 }
 
 model User {
