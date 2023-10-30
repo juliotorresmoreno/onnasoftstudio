@@ -8,7 +8,7 @@ export function FillMask() {
   const [text, setText] = useState("");
   useEffect(() => {
     model.loadModel().then(() => {
-      model.unmasker("The Milky Way is a [MASK] galaxy.").then((res) => {
+      model.unmasker("The Milky Way is a [MASK] galaxy.").then((res: any) => {
         setText(res[0].sequence);
       });
     });

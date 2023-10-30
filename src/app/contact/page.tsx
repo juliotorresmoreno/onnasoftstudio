@@ -75,7 +75,7 @@ export default function Page() {
     const model = MakeModelQuestionAnswering();
     setModel(model);
     model.loadModel();
-  }, []);
+  }, [isLoaded]);
 
   return (
     <>
