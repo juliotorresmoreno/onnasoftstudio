@@ -1,52 +1,84 @@
 "use client";
 
-import { useState } from "react";
-import Head from "next/head";
-import config from "@/config";
+import { useEffect, useState } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Editor } from "@/components/Editor";
 import { Button } from "@/components/ui/button";
 import contactTemplate from "@/templates/contact";
-import { GoogleAnalytics } from "@/components/GoogleAnalitics";
+import { RegisterForm } from "@/components/forms/register";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { MakeModelQuestionAnswering } from "@/services/llms/question-answering";
+import { QuestionAnsweringModelBase } from "@/services/llms/question-answering/QuestionAnsweringModelBase";
+import { useRouter } from "next/navigation";
+import { Contact } from "@/components/Contact";
 
-const editorStyle: React.CSSProperties = {
-  height: 500,
-};
+const pre = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b/;
 
 export default function Page() {
   const template = contactTemplate;
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [description, setDescription] = useState(template);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [terms, setTerms] = useState(false);
-  const [description, setDescription] = useState(template);
+  const [model, setModel] = useState<QuestionAnsweringModelBase | null>(null);
+  const router = useRouter();
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+  };
+  const onSend = async () => {
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ terms, description }),
+      body: JSON.stringify({ terms, description, name, email }),
     });
     if (res.ok) {
       alert("Message sent successfully!");
+      router.push("/");
     } else {
       alert("Message failed to send!");
     }
   };
+
+  const onContinue = async (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    const exists = pre.exec(description);
+    if (exists?.length) {
+      setEmail(exists[0]);
+    }
+
+    if (model !== null) {
+      const { answer } = await model.answerer(
+        "What is the name of the person on the document?",
+        description
+      );
+      setName(answer);
+    }
+  };
+
+  useEffect(() => {
+    if (isLoaded) return;
+
+    setIsLoaded(true);
+    const model = MakeModelQuestionAnswering();
+    setModel(model);
+    model.loadModel();
+  }, []);
+
   return (
     <>
-      <Head>
-        <title>Contact: {config.TITLE}</title>
-        <meta
-          content="Explore our blog to discover the latest insights and innovations in technology and AI, shaping the future of our digital world."
-          name="description"
-        />
-      </Head>
-
       <Header />
 
       <main>
@@ -68,44 +100,77 @@ export default function Page() {
                 support team is delighted to help you.
               </p>
             </div>
-            <div className="flex flex-col max-w-3xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
+            <div className="max-w-3xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 w-full">
               <form onSubmit={onSubmit}>
                 <div>
-                  <Editor
-                    defaultValue={template}
-                    onChange={setDescription}
-                    editorStyle={editorStyle}
-                  />
+                  <textarea
+                    className="w-full h-96 border border-gray-200 rounded-lg p-4 dark:text-white"
+                    onChange={({ target }) => {
+                      setDescription(target.value);
+                    }}
+                    value={description}
+                  ></textarea>
                 </div>
-                <div className="mt-3 flex items-start">
-                  <div className="flex mt-0.5">
-                    <input
-                      id="disclaimer"
-                      name="disclaimer"
-                      type="checkbox"
-                      checked={terms}
-                      onChange={(e) => setTerms(e.target.checked)}
-                      className="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
-                    />
-                  </div>
-                  <div className="ml-3">
-                    <label
-                      htmlFor="disclaimer"
-                      className="cursor-pointer select-none text-sm text-gray-600 dark:text-gray-400"
-                    >
-                      By submitting this contact form, you acknowledge and agree
-                      to the collection of your personal information.
-                    </label>
-                  </div>
-                </div>
-                <div className="mt-10 grid">
-                  <Button
-                    className="bg-primary text-white hover:bg-primary-2"
-                    disabled={!terms}
-                    type="submit"
-                  >
-                    Contact us
-                  </Button>
+
+                <div className="mt-5 grid">
+                  <Dialog open={open} onOpenChange={setOpen}>
+                    <DialogTrigger asChild>
+                      <Button
+                        className="bg-primary text-white hover:bg-primary-2"
+                        type="button"
+                        onClick={onContinue}
+                      >
+                        Continue
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[425px] bg-white gap-2">
+                      <DialogHeader>
+                        <DialogTitle>Register</DialogTitle>
+                        <DialogDescription className="text-justify">
+                          Please share your contact details with us for better
+                          communication and updates.
+                        </DialogDescription>
+                      </DialogHeader>
+                      <RegisterForm
+                        email={email}
+                        name={name}
+                        emailOnChange={setEmail}
+                        nameOnChange={setName}
+                      />
+                      <div>
+                        <div className="flex items-start">
+                          <div className="flex mt-0.5">
+                            <input
+                              id="disclaimer"
+                              name="disclaimer"
+                              type="checkbox"
+                              checked={terms}
+                              onChange={(e) => setTerms(e.target.checked)}
+                              className="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                            />
+                          </div>
+                          <div className="ml-3">
+                            <label
+                              htmlFor="disclaimer"
+                              className="cursor-pointer select-none text-sm text-gray-600 dark:text-gray-400"
+                            >
+                              Submitting this form requires your contact info.
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <Button
+                          className="text-white w-full"
+                          disabled={!terms}
+                          type="submit"
+                          onClick={onSend}
+                        >
+                          Send
+                        </Button>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
                 <div className="mt-3 text-center">
                   <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -117,49 +182,8 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section className="relative not-prose scroll-mt-[72px]">
-          <div
-            className="absolute inset-0 pointer-events-none -z-[1]"
-            aria-hidden="true"
-          >
-            <div className="absolute inset-0" />
-          </div>
-          <div className="relative px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default max-w-7xl mx-auto">
-            <div className="mb-8 md:mx-auto md:mb-12 text-center max-w-3xl">
-              <h2 className="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">
-                We are here to help!
-              </h2>
-            </div>
-            <div className="grid sm:gap-y-8 lg:grid-cols-3 sm:grid-cols-2 gap-4 md:gap-6">
-              <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
-                <div className="text-xl font-bold">General support</div>
-                <p className="text-muted mt-2">
-                  Chat with us for inquiries related to account management,
-                  website navigation, payment issues, accessing purchased
-                  templates or general questions about the website&apos;s
-                  functionality.
-                </p>
-              </div>
-              <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
-                <div className="text-xl font-bold">Contact sales</div>
-                <p className="text-muted mt-2">
-                  Chat with us for questions about purchases, customization
-                  options, licensing for commercial use, inquiries about
-                  specific template, etc.
-                </p>
-              </div>
-              <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
-                <div className="text-xl font-bold">Technical support</div>
-                <p className="text-muted mt-2">
-                  Chat with us when facing issues like template installation,
-                  problems editing difficulties, compatibility issues with
-                  software or download errors, or other technical challenges
-                  related to using the templates.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+
+        <Contact />
       </main>
 
       <Footer />

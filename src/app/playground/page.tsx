@@ -1,30 +1,23 @@
-import { Container } from "@/components/Container";
+"use client";
+
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import Head from "next/head";
-import Image from "next/image";
-import buildingSrc from "../../assets/building-3.png";
 import config from "@/config";
+import Playground from "@/components/playground";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact: " + config.TITLE,
+  description: `Unleash your creativity and experiment with cutting-edge technology in our Playground, where you can tinker with frontend, backend, cloud, and AI tools.`,
+};
 
 export default function Page() {
   return (
     <>
-      <Head>
-        <title>Playground: {config.TITLE}</title>
-        <meta
-          content="Unleash your creativity and experiment with cutting-edge technology in our Playground, where you can tinker with frontend, backend, cloud, and AI tools."
-          name="description"
-        />
-      </Head>
-
       <Header />
 
       <main>
-        <Container>
-          <div className="flex flex-col items-center justify-center">
-            <Image alt="Building" src={buildingSrc} />
-          </div>
-        </Container>
+        <Playground />
       </main>
       <Footer />
     </>

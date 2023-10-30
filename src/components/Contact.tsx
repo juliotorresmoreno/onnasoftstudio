@@ -1,5 +1,3 @@
-import config from "@/config";
-
 export function Contact() {
   return (
     <section className="relative not-prose scroll-mt-[72px]" id="contact">
@@ -9,88 +7,36 @@ export function Contact() {
       >
         <div className="absolute inset-0" />
       </div>
-      <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl">
-        <div className="text-center mb-8 md:mb-12 md:mx-auto max-w-3xl">
-          <h2 className="font-bold leading-tighter font-heading tracking-tighter text-heading md:text-4xl text-3xl">
-            Elevate Your Digital Presence
+      <div className="relative px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default max-w-7xl mx-auto">
+        <div className="mb-8 md:mx-auto md:mb-12 text-center max-w-3xl">
+          <h2 className="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">
+            We are here to help!
           </h2>
-          <p className="text-muted text-xl mt-4">
-            Ready to take the next step? Contact us now and discover how we can
-            help you reach your goals!
-          </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 sm:gap-y-8">
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29] dark:bg-slate-900 dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
-            <div className="font-bold text-xl">General support</div>
+        <div className="grid sm:gap-y-8 lg:grid-cols-3 sm:grid-cols-2 gap-4 md:gap-6">
+          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
+            <div className="text-xl font-bold">General support</div>
             <p className="text-muted mt-2">
               Chat with us for inquiries related to account management, website
               navigation, payment issues, accessing purchased templates or
               general questions about the website&apos;s functionality.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29] dark:bg-slate-900 dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
-            <svg
-              className="text-primary h-12 mb-6 w-12"
-              data-icon="tabler:headset"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-            >
-              <symbol id="ai:tabler:headset">
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                >
-                  <path d="M4 14v-3a8 8 0 1 1 16 0v3m-2 5c0 1.657-2.686 3-6 3" />
-                  <path d="M4 14a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3zm11 0a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3z" />
-                </g>
-              </symbol>
-              <use xlinkHref="#ai:tabler:headset" />
-            </svg>
-            <div className="font-bold text-xl">Phone</div>
+          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
+            <div className="text-xl font-bold">Contact sales</div>
             <p className="text-muted mt-2">
-              <a
-                href={`https://api.whatsapp.com/send?phone=${config.PHONE}&text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services`}
-                target="_blank"
-              >
-                {config.PHONE}{" "}
-              </a>
-              <a />
+              Chat with us for questions about purchases, customization options,
+              licensing for commercial use, inquiries about specific template,
+              etc.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29] dark:bg-slate-900 dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
-            <svg
-              className="text-primary h-12 mb-6 w-12"
-              data-icon="tabler:mail"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-            >
-              <symbol id="ai:tabler:mail">
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                >
-                  <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" />
-                  <path d="m3 7l9 6l9-6" />
-                </g>
-              </symbol>
-              <use xlinkHref="#ai:tabler:mail" />
-            </svg>
-            <div className="font-bold text-xl">Email</div>
+          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
+            <div className="text-xl font-bold">Technical support</div>
             <p className="text-muted mt-2">
-              <a
-                href={`mailto:${config.EMAIL}?subject=Inquiry%20About%20[Your%20Subject]`}
-                target="_blank"
-              >
-                {config.EMAIL}
-              </a>
+              Chat with us when facing issues like template installation,
+              problems editing difficulties, compatibility issues with software
+              or download errors, or other technical challenges related to using
+              the templates.
             </p>
           </div>
         </div>

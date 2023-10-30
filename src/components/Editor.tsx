@@ -35,11 +35,11 @@ const toolbarOpts = {
   },
 };
 
-type EditorProps = {
+export interface EditorProps {
   defaultValue?: string;
   onChange?: (value: string) => void;
   editorStyle?: React.CSSProperties;
-};
+}
 
 export function Editor({
   defaultValue = "",
@@ -67,18 +67,5 @@ export function Editor({
     setEditorState(contentState);
   }, [defaultValue]);
 
-  return (
-    <div>
-      {isLoaded && (
-        <EditorWysiwyg
-          editorStyle={editorStyle}
-          editorState={editorState}
-          wrapperClassName="wysiwyg-wrapper"
-          editorClassName="wysiwyg-editor"
-          onEditorStateChange={onEditorStateChange}
-          toolbar={toolbarOpts}
-        />
-      )}
-    </div>
-  );
+  return <div>{isLoaded && <textarea />}</div>;
 }

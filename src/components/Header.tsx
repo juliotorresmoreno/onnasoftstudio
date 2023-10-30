@@ -4,7 +4,6 @@ import classNames from "classnames";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import logoSrc from "../assets/icon64x64.png";
-import config from "@/config";
 import Link from "next/link";
 
 export function Header() {
@@ -24,7 +23,7 @@ export function Header() {
       <div className="absolute inset-0" />
       <div className="relative mx-auto max-w-7xl md:px-6 text-default md:flex md:justify-between px-3 py-3 w-full">
         <div className="flex justify-between">
-          <a href="/#" className="flex items-center">
+          <a href="/#" className="flex items-center font-bold">
             <span className="font-bold dark:text-white text-2xl md:text-xl ml-2 rtl:ml-0 rtl:mr-2 self-center text-gray-900 whitespace-nowrap">
               <Image
                 alt=""
@@ -83,7 +82,7 @@ export function Header() {
             <li>
               <Link
                 href="/#about"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3"
+                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 About Me
               </Link>
@@ -91,7 +90,7 @@ export function Header() {
             <li>
               <Link
                 href="/#features"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3"
+                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Features
               </Link>
@@ -99,7 +98,7 @@ export function Header() {
             <li>
               <Link
                 href="/#FAQS"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3"
+                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 FAQS
               </Link>
@@ -107,25 +106,9 @@ export function Header() {
             <li>
               <Link
                 href="/contact"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3"
+                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Contact
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/playground"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3"
-              >
-                Playground
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3"
-              >
-                Blog
               </Link>
             </li>
           </ul>

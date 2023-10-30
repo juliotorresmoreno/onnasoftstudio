@@ -96,3 +96,7 @@ html {
 header {
   background-color: white;
 }
+
+.dialog {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden;
+}
