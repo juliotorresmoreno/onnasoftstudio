@@ -1,10 +1,10 @@
-import config from "@/config";
 import { locale } from "@/lib/date";
 import Image from "next/image";
 
 export interface ArticleProps {
   title: string;
   content: string;
+  description: string;
   shortUrl: string;
   imageUrl: string;
   category: string;
@@ -12,9 +12,12 @@ export interface ArticleProps {
   createdAt: Date;
 }
 
+const showCategory = false;
+
 export function Article({
   title,
   content,
+  description,
   shortUrl,
   imageUrl,
   category,
@@ -39,8 +42,8 @@ export function Article({
                 width: "100%",
               }}
               priority
+              alt=""
               className="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-              alt="Get started with AstroWind to create a website using Astro and Tailwind CSS"
               decoding="async"
             />
           </div>
@@ -76,13 +79,17 @@ export function Article({
                 >
                   {locale(createdAt)}
                 </time>
-                ·{" "}
-                <a
-                  className="capitalize hover:underline"
-                  href={`/category/${category}`}
-                >
-                  {category}
-                </a>
+                {showCategory && (
+                  <>
+                    ·{" "}
+                    <a
+                      className="capitalize hover:underline"
+                      href={`/category/${category}`}
+                    >
+                      {category}
+                    </a>
+                  </>
+                )}
               </span>
             </div>
             <h2 className="text-xl sm:text-2xl font-bold leading-tight mb-2 font-heading dark:text-slate-300">
@@ -94,12 +101,9 @@ export function Article({
               </a>
             </h2>
           </header>
-          <div
-            className="flex-grow text-mute"
-            dangerouslySetInnerHTML={{
-              __html: content.substring(0, 150) + " ...",
-            }}
-          ></div>
+          <div className="flex-grow text-mute">
+            {description.substring(0, 300) + " ..."}
+          </div>
         </div>
       </article>
     </li>

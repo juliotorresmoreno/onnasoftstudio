@@ -234,7 +234,9 @@ export function Features() {
               </div>
               <div className="mt-0.5">
                 <h3 className="font-bold text-xl md:text-[1.3rem]">
-                  Data Science Consulting
+                  <Link href="/blog/ai-generative-power-for-all-what-to-consider">
+                    Data Science Consulting
+                  </Link>
                 </h3>
                 <p className="text-muted mt-3">
                   Help businesses effectively use data through expert consulting
