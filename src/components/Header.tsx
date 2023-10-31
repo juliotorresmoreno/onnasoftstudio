@@ -111,6 +111,14 @@ export function Header() {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                href="/blog"
+                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
+              >
+                Blog
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className="flex items-center md:w-auto w-full bottom-0 fixed hidden justify-end left-0 md:flex md:mb-0 md:p-0 md:self-center md:static p-3 rtl:left-auto rtl:right-0">

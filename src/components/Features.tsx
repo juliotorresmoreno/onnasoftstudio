@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Features() {
   return (
     <section className="relative not-prose scroll-mt-[72px]" id="features">
@@ -38,7 +40,9 @@ export function Features() {
               </div>
               <div className="mt-0.5">
                 <h3 className="font-bold text-xl md:text-[1.3rem]">
-                  Custom Web Application Development
+                  <a href="/blog/unraveling-the-digital-realm-what-really-is-a-website">
+                    Custom Web Application Development
+                  </a>
                 </h3>
                 <p className="text-muted mt-3">
                   Create unique web applications tailored to your needs, using
@@ -64,7 +68,9 @@ export function Features() {
               </div>
               <div className="mt-0.5">
                 <h3 className="font-bold text-xl md:text-[1.3rem]">
-                  Mobile App Development
+                  <Link href="/blog/mobile-app-development-from-idea-to-success">
+                    Mobile App Development
+                  </Link>
                 </h3>
                 <p className="text-muted mt-3">
                   Craft mobile apps for Android and iOS, integrating them
@@ -117,12 +123,14 @@ export function Features() {
               </div>
               <div className="mt-0.5">
                 <h3 className="font-bold text-xl md:text-[1.3rem]">
-                  Data Analysis and Visualization
+                  <Link href="/blog/boost-your-business-with-a-data-driven-business-strategy">
+                    Boost Your Business with a Data-Driven Business Strategy
+                  </Link>
                 </h3>
                 <p className="text-muted mt-3">
-                  Understand and leverage your data with data analysis,
-                  predictive modeling, and visualizations for informed
-                  decision-making.
+                  Are you looking to take your business to the next level? Are
+                  you seeking a competitive advantage that sets you apart in the
+                  market?
                 </p>
               </div>
             </div>
@@ -132,33 +140,35 @@ export function Features() {
               <div className="flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  className="icon icon-tabler icon-tabler-brand-aws"
                   width="3rem"
                   height="3rem"
-                  viewBox="0 0 48 48"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M11.379 23.613h9.508a2 2 0 0 1 2 2v18.036H11.379a2 2 0 0 1-2-2V25.613a2 2 0 0 1 2-2Zm15.58-9.44V6.649a2 2 0 0 1 2-2h9.508a2 2 0 0 1 2 2v35a2 2 0 0 1-2 2h-6.79"
-                  />
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M18.169 23.613v-7.44a2 2 0 0 1 2-2h9.508a2 2 0 0 1 2 2v27.476h-8.79"
-                  />
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M17 18.5a15.198 15.198 0 0 1 -7.37 1.44a14.62 14.62 0 0 1 -6.63 -2.94"></path>
+                  <path d="M19.5 21c.907 -1.411 1.451 -3.323 1.5 -5c-1.197 -.773 -2.577 -.935 -4 -1"></path>
+                  <path d="M3 11v-4.5a1.5 1.5 0 0 1 3 0v4.5"></path>
+                  <path d="M3 9h3"></path>
+                  <path d="M9 5l1.2 6l1.8 -4l1.8 4l1.2 -6"></path>
+                  <path d="M18 10.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75"></path>
                 </svg>
               </div>
               <div className="mt-0.5">
                 <h3 className="font-bold text-xl md:text-[1.3rem]">
-                  Dashboard Design
+                  <Link href="/blog/unlocking-business-potential-with-alex-from-aws">
+                    Scaling Your Business with AWS, No Infrastructure Worries.
+                  </Link>
                 </h3>
                 <p className="text-muted mt-3">
-                  Monitor key data in real-time with interactive dashboards,
-                  showcasing KPIs and business metrics.
+                  Reduce costs, scale your business, and let AWS handle the
+                  infrastructure. Discover how AWS offers flexibility and
+                  efficiency without long-term commitments.
                 </p>
               </div>
             </div>
@@ -195,7 +205,9 @@ export function Features() {
               </div>
               <div className="mt-0.5">
                 <h3 className="font-bold text-xl md:text-[1.3rem]">
-                  Bot Integration
+                  <a href="/blog/integration-of-bots-intelligent-automation-for-your-business-and-education">
+                    Bot Integration
+                  </a>
                 </h3>
                 <p className="text-muted mt-3">
                   Enhance user experiences and automate processes with the

@@ -13,6 +13,9 @@ const nextConfig = {
     };
     return config;
   },
+  images: {
+    remotePatterns: [],
+  },
 };
 
 module.exports = nextConfig;

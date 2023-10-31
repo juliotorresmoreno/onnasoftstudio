@@ -1,7 +1,7 @@
 import Image from "next/image";
-import connectionsSrc from "../assets/connections-2099068_1280.jpg";
-import moneySrc from "../assets/money-6063323_1280.jpg";
-import programmerSrc from "../assets/programmer-1653351_1280.png";
+import connectionsSrc from "../assets/network.png";
+import moneySrc from "../assets/money-2.png";
+import programmerSrc from "../assets/team.png";
 
 export function Insides() {
   return (

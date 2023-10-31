@@ -1,0 +1,12 @@
+.content h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content p a {
+  color: var(--bg-primary);
+}

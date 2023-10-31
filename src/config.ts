@@ -18,6 +18,10 @@ const config = {
   DATABASE_DRIVER: process.env.DATABASE_DRIVER ?? "",
   DATABASE_URL: process.env.DATABASE_URL ?? "",
 
+  DEFAULT_TIMEZONE: process.env.DEFAULT_TIMEZONE ?? "UTC",
+
+  BASE_URL: process.env.BASE_URL ?? "",
+
   RESEND_API_KEY: process.env.RESEND_API_KEY,
   SITE_EMAIL: process.env.SITE_EMAIL ?? "",
 };

@@ -2,7 +2,6 @@ import config from "@/config";
 import prisma from "@/lib/prisma";
 import { MakeEmailProvider } from "@/services/email";
 import { welcomeTemplate } from "@/templates/welcome";
-import Handlebars from "handlebars";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {

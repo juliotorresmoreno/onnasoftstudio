@@ -10,12 +10,21 @@ datasource db {
 }
 
 model Post {
-    id        String  @id @default(cuid())
-    title     String
-    content   String?
-    published Boolean @default(false)
-    author    User?   @relation(fields: [authorId], references: [id])
-    authorId  String?
+    id          String  @id @default(cuid())
+    title       String
+    content     String?
+    category    String?
+    imageUrl    String?
+    keywords    String?
+    description String  @default("")
+    shortUrl    String? @unique
+    published   Boolean @default(false)
+    author      User?   @relation(fields: [authorId], references: [id])
+    authorId    String?
+
+    createdAt DateTime @default(now()) @map(name: "created_at")
+    updatedAt DateTime @updatedAt @map(name: "updated_at")
+    deleted   Boolean  @default(false)
 
     @@map(name: "posts")
 }
@@ -26,17 +35,25 @@ model Message {
     author   User?   @relation(fields: [authorId], references: [id])
     authorId String?
 
+    createdAt DateTime @default(now()) @map(name: "created_at")
+    updatedAt DateTime @updatedAt @map(name: "updated_at")
+    deleted   Boolean  @default(false)
+
     @@map(name: "messages")
 }
 
 model User {
-    id        String    @id @default(cuid())
-    fullname  String
-    email     String    @unique
-    createdAt DateTime  @default(now()) @map(name: "created_at")
-    updatedAt DateTime  @updatedAt @map(name: "updated_at")
-    posts     Post[]
-    Message   Message[]
+    id       String    @id @default(cuid())
+    fullname String
+    email    String    @unique
+    enabled  Boolean   @default(false)
+    password String    @default("")
+    posts    Post[]
+    Message  Message[]
+
+    createdAt DateTime @default(now()) @map(name: "created_at")
+    updatedAt DateTime @updatedAt @map(name: "updated_at")
+    deleted   Boolean  @default(false)
 
     @@map(name: "users")
 }
