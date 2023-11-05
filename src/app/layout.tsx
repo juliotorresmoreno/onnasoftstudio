@@ -1,12 +1,12 @@
 import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import config from "@/config";
 import { Announcement } from "@/components/Announcement";
 import favicon from "../assets/icon64x64.ico";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import imageSrc from "../assets/tree-2987962_1280.jpg";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

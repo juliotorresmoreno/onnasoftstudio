@@ -7,10 +7,10 @@ interface PageProps {
   };
 }
 
-export default async function Page({ params: { slug } }: PageProps) {
+export default async function Page({ params: { slug } }: Readonly<PageProps>) {
   const article = await prisma.post.findFirst({
     where: {
-      shortUrl: slug,
+      shortUrl: slug as any,
     },
   });
 

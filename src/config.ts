@@ -24,6 +24,8 @@ const config = {
 
   RESEND_API_KEY: process.env.RESEND_API_KEY,
   SITE_EMAIL: process.env.SITE_EMAIL ?? "",
+
+  ENABLE_CHAT: process.env.ENABLE_CHAT === "true",
 };
 
 export default config;
