@@ -7,6 +7,7 @@ import favicon from "../assets/icon64x64.ico";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import imageSrc from "../assets/tree-2987962_1280.jpg";
 import "./globals.css";
+import ChatBot from "@/components/chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={inter.className}>
         {showAnnouncement && <Announcement />}
         {children}
+
+        <ChatBot />
       </body>
     </html>
   );
