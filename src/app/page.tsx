@@ -1,6 +1,6 @@
 import { About } from "@/components/About";
 import { CallToAction } from "@/components/CallToAction";
-import { FAQS } from "@/components/FAQS";
+import { Faqs } from "@/components/FAQS";
 import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  if (process.env.DATABASE_URL === "") return null;
+
   return (
     <>
       <Header />
@@ -26,7 +28,7 @@ export default function Page() {
         <Features />
         <Insides />
         <Recommends />
-        <FAQS />
+        <Faqs />
         <CallToAction />
       </main>
       <Footer />

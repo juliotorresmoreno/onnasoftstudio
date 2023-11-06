@@ -1,4 +1,4 @@
-export function FAQS() {
+export function Faqs() {
   return (
     <section className="relative not-prose scroll-mt-[72px]" id="FAQS">
       <div

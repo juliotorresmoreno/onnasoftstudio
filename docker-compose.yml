@@ -1,0 +1,10 @@
+version: "3"
+services:
+  website:
+    build: .
+    image: jliotorresmoreno/website:latest
+    ports:
+      - "3000:3000"
+    #environment:
+    env_file:
+      - .env

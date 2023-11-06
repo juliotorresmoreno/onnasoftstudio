@@ -8,11 +8,14 @@ interface PageProps {
 }
 
 export default async function Page({ params: { slug } }: Readonly<PageProps>) {
-  const article = await prisma.post.findFirst({
-    where: {
-      shortUrl: slug as any,
-    },
-  });
+  const article =
+    process.env.DATABASE_URL === ""
+      ? null
+      : await prisma.post.findFirst({
+          where: {
+            shortUrl: slug as any,
+          },
+        });
 
   return <Index {...article} />;
 }

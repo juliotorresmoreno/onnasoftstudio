@@ -1,3 +1,9 @@
+if (process.env.LOADED !== "true") {
+  require("dotenv").config();
+}
+
+process.env.LOADED = "true";
+
 const config = {
   NAME: process.env.NAME ?? "",
   TITLE: process.env.TITLE ?? "",
