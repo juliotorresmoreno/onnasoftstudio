@@ -13,6 +13,9 @@ const config = {
   YOUTUBE: process.env.YOUTUBE ?? "",
   GITHUB: process.env.GITHUB ?? "",
   SITE_URL: process.env.SITE_URL ?? "",
+
+  BOT_URL: process.env.SITE_URL,
+
   GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID ?? "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY ?? "",
   NODE_ENV: process.env.NODE_ENV ?? "",
