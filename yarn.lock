@@ -457,10 +457,10 @@
   resolved "https://registry.npmjs.org/@one-ini/wasm/-/wasm-0.1.1.tgz"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
-"@onnasoft/chatbot-ui@0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@onnasoft/chatbot-ui/-/chatbot-ui-0.0.26.tgz#dd595fa1847dbb11572b297d09aa7ef605ea862e"
-  integrity sha512-Oyx892qyfSIqOT9ZAy908mzsPqq2rlsq2QXjRk90qbFzqbiOrcxXktkBZDaktw3gmVBgXLLGhwMwPYz5bvGE8g==
+"@onnasoft/chatbot-ui@0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@onnasoft/chatbot-ui/-/chatbot-ui-0.0.27.tgz#88152583e293c60cdef21e7ea99cd48053594280"
+  integrity sha512-CFBLuGWGRcaE78Eqvj2yb+jJTi24LvtjxjCaSF5WJS145r/YfBYDS2NNKBvykBlw/Fdq4PxuRoiWKgP4g7+VFQ==
   dependencies:
     "@types/react-transition-group" "^4.4.8"
     classnames "^2.3.2"
