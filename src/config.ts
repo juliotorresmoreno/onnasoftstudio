@@ -15,6 +15,7 @@ const config = {
   SITE_URL: process.env.SITE_URL ?? "",
 
   BOT_URL: process.env.SITE_URL,
+  SHOW_BOT: process.env.SHOW_BOT,
 
   GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID ?? "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY ?? "",

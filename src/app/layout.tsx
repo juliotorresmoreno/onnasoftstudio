@@ -44,7 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {showAnnouncement && <Announcement />}
         {children}
 
-        <ChatBot />
+        {config.SHOW_BOT && <ChatBot />}
       </body>
     </html>
   );
