@@ -6,8 +6,8 @@ import { Announcement } from "@/components/Announcement";
 import favicon from "../assets/icon64x64.ico";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import imageSrc from "../assets/tree-2987962_1280.jpg";
-import "./globals.css";
 import ChatBot from "@/components/chatbot";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

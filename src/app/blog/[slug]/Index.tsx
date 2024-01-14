@@ -58,7 +58,7 @@ export function Index(props: IndexProps) {
                 {props.description}
               </p>
 
-              <p className="px-4 max-w-5xl mx-auto mt-4 mb-8 text-muted dark:text-slate-400">
+              <p className="px-4 max-w-5xl mx-auto mt-4 mb-8 text-muted ">
                 <svg
                   width="1em"
                   height="1em"
@@ -105,7 +105,7 @@ export function Index(props: IndexProps) {
             </header>
             <div
               //px-4 max-w-5xl mt-4 mx-auto text-xl text-muted text-justify
-              className="content text-lg text-justify mx-auto px-4 max-w-5xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px]"
+              className="content text-lg text-justify mx-auto px-4 max-w-5xl prose prose-lg lg:prose-xl  :text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary :text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px]"
               //className="px-4 max-w-5xl mt-4 mx-auto text-xl text-muted text-justify"
               dangerouslySetInnerHTML={{ __html: props.content ?? "" }}
             ></div>

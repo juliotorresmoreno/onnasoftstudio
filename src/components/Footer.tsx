@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="relative not-prose border-gray-200 border-t">
       <div
-        className="absolute inset-0 pointer-events-none dark:bg-dark"
+        className="absolute inset-0 pointer-events-none "
         aria-hidden="true"
       />
       <div className="relative mx-auto px-4 max-w-7xl sm:px-6 text-gray-700">

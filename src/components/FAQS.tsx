@@ -5,7 +5,7 @@ export function Faqs() {
         className="absolute inset-0 pointer-events-none -z-[1]"
         aria-hidden="true"
       >
-        <div className="absolute inset-0 bg-blue-50 dark:bg-transparent" />
+        <div className="absolute inset-0 bg-blue-50 " />
       </div>
       <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-6xl">
         <div className="text-center mb-8 md:mb-12 md:mx-auto max-w-3xl text-white">

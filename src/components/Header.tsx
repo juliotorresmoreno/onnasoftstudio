@@ -51,15 +51,15 @@ export function Header() {
                 <>
                   <span className="sr-only">Toggle Menu</span>
                   <span
-                    className="bg-black dark:bg-white duration-200 ease h-0.5 my-1 opacity-80 rounded-full transform transition w-6 group-[.expanded]:rotate-45 group-[.expanded]:translate-y-2.5"
+                    className="bg-black  duration-200 ease h-0.5 my-1 opacity-80 rounded-full transform transition w-6 group-[.expanded]:rotate-45 group-[.expanded]:translate-y-2.5"
                     aria-hidden="true"
                   />
                   <span
-                    className="bg-black dark:bg-white duration-200 ease h-0.5 my-1 opacity-80 rounded-full transform transition w-6 group-[.expanded]:opacity-0"
+                    className="bg-black  duration-200 ease h-0.5 my-1 opacity-80 rounded-full transform transition w-6 group-[.expanded]:opacity-0"
                     aria-hidden="true"
                   />
                   <span
-                    className="bg-black dark:bg-white duration-200 ease h-0.5 my-1 opacity-80 rounded-full transform transition w-6 group-[.expanded]:-rotate-45 group-[.expanded]:-translate-y-2.5"
+                    className="bg-black  duration-200 ease h-0.5 my-1 opacity-80 rounded-full transform transition w-6 group-[.expanded]:-rotate-45 group-[.expanded]:-translate-y-2.5"
                     aria-hidden="true"
                   />
                 </>

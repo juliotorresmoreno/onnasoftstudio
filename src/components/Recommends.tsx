@@ -5,7 +5,7 @@ export function Recommends() {
         className="absolute inset-0 pointer-events-none -z-[1]"
         aria-hidden="true"
       >
-        <div className="absolute inset-0 dark:bg-transparent" />
+        <div className="absolute inset-0 " />
       </div>
       <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl">
         <div className="text-center mb-8 md:mb-12 md:mx-auto max-w-3xl">
@@ -18,7 +18,7 @@ export function Recommends() {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 sm:gap-y-8">
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-nextjs"
@@ -41,7 +41,7 @@ export function Recommends() {
               quickly bring your projects to production.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-chart-infographic"
@@ -70,7 +70,7 @@ export function Recommends() {
               informed decision-making across the organization.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-robot-face"
@@ -97,7 +97,7 @@ export function Recommends() {
               content, such as text, images, or music.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="3rem"
@@ -123,7 +123,7 @@ export function Recommends() {
               managing software development projects.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-aws"
@@ -153,7 +153,7 @@ export function Recommends() {
               delivery.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-shield-lock"
@@ -177,7 +177,7 @@ export function Recommends() {
               maintain code quality and identify areas for improvement.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-api"
@@ -202,7 +202,7 @@ export function Recommends() {
               communication between the frontend and backend.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-palette"
@@ -227,7 +227,7 @@ export function Recommends() {
               software meets your customers&apos; needs.
             </p>
           </div>
-          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+          <div className="flex flex-col backdrop-blur bg-white border border-[#ffffff29]  [0_4px_30px_rgba(0,0,0,0.1)] p-6 relative rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-cloud-lock-open"

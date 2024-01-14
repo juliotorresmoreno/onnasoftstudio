@@ -161,13 +161,13 @@ export default function Index() {
                               type="checkbox"
                               checked={terms}
                               onChange={(e) => setTerms(e.target.checked)}
-                              className="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+                              className="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200  bg-white "
                             />
                           </div>
                           <div className="ml-3">
                             <label
                               htmlFor="disclaimer"
-                              className="cursor-pointer select-none text-sm text-gray-600 dark:text-gray-400"
+                              className="cursor-pointer select-none text-sm text-gray-600 "
                             >
                               Submitting this form requires your contact info.
                             </label>
@@ -188,7 +188,7 @@ export default function Index() {
                   </Dialog>
                 </div>
                 <div className="mt-3 text-center">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-sm text-gray-600 ">
                     Our support team typically responds within 24 business
                     hours.
                   </p>
