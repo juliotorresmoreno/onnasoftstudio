@@ -1,35 +1,27 @@
 import config from "@/config";
 
-/*
-<div class="flex flex-row">
-  <div class="basis-1/4">01</div>
-  <div class="basis-1/4">02</div>
-  <div class="basis-1/2">03</div>
-</div>
-*/
-
 export function Footer() {
   return (
-    <footer className="relative not-prose border-gray-200 border-t dark:border-slate-800">
+    <footer className="relative not-prose border-gray-200 border-t">
       <div
         className="absolute inset-0 pointer-events-none dark:bg-dark"
         aria-hidden="true"
       />
-      <div className="relative mx-auto px-4 max-w-7xl sm:px-6 dark:text-slate-300">
+      <div className="relative mx-auto px-4 max-w-7xl sm:px-6 text-gray-700">
         <div className="md:flex md:justify-between md:flex-row md:items-center md:py-8 py-6">
           <ul className="flex md:basis-1/3 -ml-2 mb-4 md:mb-0 md:ml-4 md:order-1 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4 rtl:ml-0">
             <li>
               <a
                 href={config.LINKEDIN}
-                className="text-muted text-sm dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 inline-flex items-center p-2.5 rounded-lg"
+                className="text-muted text-sm hover:bg-pink-100 focus:outline-none focus:ring-4 focus:ring-gray-200 inline-flex items-center p-2.5 rounded-lg"
                 aria-label="Linkedin"
               >
                 <svg
-                  className="h-5 w-5"
                   data-icon="tabler:brand-linkedin"
+                  className="h-8 w-8"
                   height="1em"
-                  viewBox="0 0 24 24"
                   width="1em"
+                  viewBox="0 0 24 24"
                 >
                   <symbol id="ai:tabler:brand-linkedin">
                     <g
@@ -50,15 +42,15 @@ export function Footer() {
             <li>
               <a
                 href={config.GITHUB}
-                className="text-muted text-sm dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 inline-flex items-center p-2.5 rounded-lg"
+                className="text-muted text-sm hover:bg-pink-100 focus:outline-none focus:ring-4 focus:ring-gray-200 inline-flex items-center p-2.5 rounded-lg"
                 aria-label="Github"
               >
                 <svg
-                  className="h-5 w-5"
                   data-icon="tabler:brand-github"
+                  className="h-8 w-8"
                   height="1em"
-                  viewBox="0 0 24 24"
                   width="1em"
+                  viewBox="0 0 24 24"
                 >
                   <symbol id="ai:tabler:brand-github">
                     <path
@@ -77,15 +69,15 @@ export function Footer() {
             <li>
               <a
                 href={config.YOUTUBE}
-                className="text-muted text-sm dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 inline-flex items-center p-2.5 rounded-lg"
+                className="text-muted text-sm hover:bg-pink-100 focus:outline-none focus:ring-4 focus:ring-gray-200 inline-flex items-center p-2.5 rounded-lg"
                 aria-label="Linkedin"
               >
                 <svg
-                  className="h-5 w-5"
                   data-icon="tabler:brand-youtube"
+                  className="h-8 w-8"
                   height="1em"
-                  viewBox="0 0 24 24"
                   width="1em"
+                  viewBox="0 0 24 24"
                 >
                   <symbol id="ai:tabler:brand-youtube">
                     <g
@@ -104,8 +96,8 @@ export function Footer() {
               </a>
             </li>
           </ul>
-          <div className="mr-4 md:basis-1/3 dark:text-slate-400 text-sm">
-            Made by {config.NAME}· All rights reserved.
+          <div className="mr-4 md:basis-2/3 text-lg">
+            Made by {config.NAME} · All rights reserved.
           </div>
         </div>
       </div>

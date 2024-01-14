@@ -13,11 +13,11 @@ export function Hero() {
         <div className="pointer-events-none md:pt-[76px] pt-0" />
         <div className="md:py-20 py-12">
           <div className="mx-auto max-w-5xl md:pb-16 pb-10 text-center">
-            <h1 className="font-bold leading-tighter font-heading tracking-tighter mb-4 dark:text-gray-200 md:text-6xl text-5xl">
+            <h1 className="font-bold leading-tighter font-heading tracking-tighter mb-4 md:text-6xl text-5xl">
               Create the future, breathe life into your business, and thrive.
             </h1>
             <div className="mx-auto max-w-3xl">
-              <p className="text-muted text-xl dark:text-slate-300 mb-6">
+              <p className="text-muted text-xl mb-6">
                 <span className="sm:inline hidden">
                   Explore Technology and AI through the Vision of {config.NAME},
                   a Forward-Thinking Software Developer on a Mission for

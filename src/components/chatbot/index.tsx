@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import "@onnasoft/chatbot-ui/lib/Chat.css";
 import config from "@/config";
+import './styles.css'
 
 const BOT_URL = config.BOT_URL;
 

@@ -1,12 +1,18 @@
 export function BlogHeader() {
   return (
-    <header className="mb-8 md:mb-16 text-center max-w-3xl mx-auto">
+    <header className="mb-8 md:mb-16 text-center max-w-6xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading">
-        The Blog
+        TechChillHub
       </h1>
-      <div className="mt-2 md:mt-3 mx-auto text-xl text-gray-500 dark:text-slate-400 font-medium">
-        Explore our blog to discover the latest insights and innovations in
-        technology and AI, shaping the future of our digital world.
+      <div className="mt-2 md:mt-3 mx-auto text-xl text-justify font-medium">
+        Welcome to TechChillHub, where the world of technology meets laid-back
+        discussions! Dive into a refreshing blend of informative yet casual
+        articles exploring the latest tech trends, hacks, and gadgets. Whether
+        you're a seasoned tech enthusiast or a curious beginner, join us in
+        unraveling the wonders of the digital realm. From tech news to hands-on
+        experiences, we're your go-to spot for a chill exploration of the
+        ever-evolving world of technology. Grab a virtual seat, relax, and let's
+        embark on this tech journey together!
       </div>
     </header>
   );

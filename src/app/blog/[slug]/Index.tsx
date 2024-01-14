@@ -30,38 +30,11 @@ export function Index(props: IndexProps) {
       <Header />
 
       <main>
-        <section className="py-8 sm:py-16 lg:py-20 mx-auto">
+        <section className="pt-8 sm:py-16 lg:py-20 mx-auto">
           <article>
             <header>
-              <div className="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
+              <div className="px-4 flex justify-between flex-col sm:flex-row max-w-4xl mx-auto mt-0 mb-2 sm:items-center">
                 <p>
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    className="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400"
-                    data-icon="tabler:clock"
-                  >
-                    <symbol id="ai:tabler:clock">
-                      <g
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                      >
-                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0" />
-                        <path d="M12 7v5l3 3" />
-                      </g>
-                    </symbol>
-                    <use xlinkHref="#ai:tabler:clock" />
-                  </svg>
-                  <time
-                    dateTime={locale(props.createdAt as any)}
-                    className="inline-block"
-                  >
-                    {locale(props.createdAt as any)}
-                  </time>
                   {showCategories && (
                     <>
                       {"· "}
@@ -75,42 +48,75 @@ export function Index(props: IndexProps) {
                   )}
                 </p>
               </div>
-              <h1 className="px-4 sm:px-6 max-w-3xl mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading">
+              <h1 className="px-4 max-w-5xl mt-4 mx-auto text-4xl md:text-5xl bold leading-tighter tracking-tighter font-heading">
+                {
+                  //<h1 className="max-w-5xl mx-auto text-4xl md:text-5xl text-center font-bold leading-tighter tracking-tighter font-heading">
+                }
                 {props.title}
               </h1>
-              <p className="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl text-muted dark:text-slate-400 text-justify">
+              <p className="px-4 max-w-5xl mt-4 mx-auto text-xl text-muted text-justify">
                 {props.description}
               </p>
+
+              <p className="px-4 max-w-5xl mx-auto mt-4 mb-8 text-muted dark:text-slate-400">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  className="w-4 h-4 inline-block -mt-0.5"
+                  data-icon="tabler:clock"
+                >
+                  <symbol id="ai:tabler:clock">
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                    >
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0" />
+                      <path d="M12 7v5l3 3" />
+                    </g>
+                  </symbol>
+                  <use xlinkHref="#ai:tabler:clock" />
+                </svg>
+                &nbsp;
+                <time
+                  dateTime={locale(props.createdAt as any)}
+                  className="inline-block"
+                >
+                  {locale(props.createdAt as any)}
+                </time>
+              </p>
+
               <Image
                 src={props.imageUrl ?? ""}
-                width={900}
-                height={506}
+                width={1024}
+                height={0}
                 alt=""
                 style={{
-                  objectFit: "cover",
+                  objectFit: "fill",
                   objectPosition: "center",
-                  maxWidth: "900px",
-                  maxHeight: "506px",
-                  aspectRatio: "1.7786561264822134",
+                  aspectRatio: "1.78",
                   width: "100%",
                 }}
-                className="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
+                className="px-4 max-w-full lg:max-w-[1024px] mx-auto mb-6 sm:rounded-md"
               />
             </header>
             <div
-              className="content text-lg text-justify mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px]"
+              //px-4 max-w-5xl mt-4 mx-auto text-xl text-muted text-justify
+              className="content text-lg text-justify mx-auto px-4 max-w-5xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px]"
+              //className="px-4 max-w-5xl mt-4 mx-auto text-xl text-muted text-justify"
               dangerouslySetInnerHTML={{ __html: props.content ?? "" }}
             ></div>
           </article>
         </section>
 
-        <div className="content text-lg text-justify mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px]">
-          <p>
-            This content was generated by or with an AI and reviewed by the
-            author of this site, along with all current and future tools. I am
-            here to help in your implementation.
-          </p>
-        </div>
+        <p className="px-4 max-w-5xl mx-auto text-xl text-muted text-justify">
+          This content was generated by or with an AI and reviewed by the author
+          of this site, along with all current and future tools. I am here to
+          help in your implementation.
+        </p>
 
         <CallToAction />
       </main>

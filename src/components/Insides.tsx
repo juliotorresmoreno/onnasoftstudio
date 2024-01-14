@@ -6,7 +6,7 @@ import programmerSrc from "../assets/team.png";
 export function Insides() {
   return (
     <>
-      <section className="relative not-prose scroll-mt-[72px]" id="insides">
+      <section className="relative not-prose scroll-mt-[72px] bg-pink-600" id="insides">
         <div
           className="absolute inset-0 pointer-events-none -z-[1]"
           aria-hidden="true"
@@ -15,24 +15,21 @@ export function Insides() {
         </div>
         <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl">
           <div className="text-center mb-8 md:mb-12 md:mx-auto lg:max-w-2xl max-w-xl sm:mx-auto">
-            <p className="font-bold dark:text-blue-200 text-base text-secondary tracking-wide uppercase">
-              Insides
-            </p>
-            <h2 className="font-bold leading-tighter leading-tighter font-heading tracking-tighter text-heading mb-4 md:text-5xl text-4xl">
+            <h2 className="text-white font-bold leading-tighter leading-tighter font-heading tracking-tighter text-heading mb-4 md:text-5xl text-4xl">
               Our creations: Coding magic for a digital kingdom.
             </h2>
           </div>
           <div className="mx-auto max-w-7xl md:px-8 p-4">
             <div className="md:flex md:gap-16 md:flex-row-reverse">
               <div className="md:basis-1/2 self-center">
-                <div className="text-lg dark:text-slate-400 mb-12">
-                  <h3 className="font-bold dark:text-white text-2xl mb-2 sm:text-3xl tracking-tight">
+                <div className="text-lg text-white mb-12">
+                  <h3 className="font-bold text-2xl mb-2 sm:text-3xl tracking-tight">
                     Building on modern foundations
                   </h3>
                   Gain a competitive advantage by incorporating industry leading
                   practices
                 </div>
-                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8">
+                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 text-white">
                   <div>
                     <div className="flex flex-row max-w-none gap-1">
                       <div className="flex justify-center">
@@ -52,7 +49,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Robust and Secure Code
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           We develop code that&apos;s not just functional, but
                           also secure, providing peace of mind for both you and
                           your users.
@@ -79,7 +76,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Scalable Architectures
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           Our solutions are built with scalability in mind,
                           ensuring they can grow alongside your business&apos;s
                           needs.
@@ -106,7 +103,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Rigorous Testing Frameworks
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           We employ comprehensive testing methodologies to
                           deliver code that is reliable and robust under all
                           conditions.
@@ -141,7 +138,7 @@ export function Insides() {
         </div>
       </section>
 
-      <section className="relative not-prose scroll-mt-[72px]">
+      <section className="relative not-prose scroll-mt-[72px] bg-pink-600">
         <div
           className="absolute inset-0 pointer-events-none -z-[1]"
           aria-hidden="true"
@@ -151,11 +148,11 @@ export function Insides() {
         <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl lg:pt-0 md:pt-0 pt-0">
           <div className="mx-auto max-w-7xl md:px-8 p-4">
             <div className="md:flex md:gap-16">
-              <div className="md:basis-1/2 self-center">
-                <div className="text-lg dark:text-slate-400 mb-12">
+              <div className="md:basis-1/2 self-center text-white">
+                <div className="text-lg mb-12">
                   Ensure your online presence truly represents you.
                 </div>
-                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8">
+                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 text-white">
                   <div>
                     <div className="flex flex-row max-w-none">
                       <div className="flex justify-center">
@@ -175,7 +172,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Future-Proofed Development
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           Our code is designed to adapt and thrive in the face
                           of ever-evolving technology trends and requirements.
                         </p>
@@ -201,7 +198,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Efficient Code Optimization
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           We fine-tune our code for performance, so your
                           applications run at peak efficiency.
                         </p>
@@ -227,7 +224,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Fully responsive design
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           Ensure your website&apos;s optimal performance on
                           various devices and screen sizes, providing a
                           consistent and enjoyable user experience.
@@ -254,7 +251,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Responsive Support
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           Count on us for quick and effective support whenever
                           you encounter issues or need assistance.
                         </p>
@@ -288,7 +285,7 @@ export function Insides() {
         </div>
       </section>
 
-      <section className="relative not-prose scroll-mt-[72px]">
+      <section className="relative not-prose scroll-mt-[72px] bg-pink-600">
         <div
           className="absolute inset-0 pointer-events-none -z-[1]"
           aria-hidden="true"
@@ -298,11 +295,11 @@ export function Insides() {
         <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl lg:pt-0 md:pt-0 pt-0">
           <div className="mx-auto max-w-7xl md:px-8 p-4">
             <div className="md:flex md:gap-16 md:flex-row-reverse">
-              <div className="md:basis-1/2 self-center">
-                <div className="text-lg dark:text-slate-400 mb-12">
+              <div className="md:basis-1/2 self-center text-white">
+                <div className="text-lg mb-12">
                   Designed to foster growth and success.
                 </div>
-                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8">
+                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 text-white">
                   <div>
                     <div className="flex flex-row max-w-none">
                       <div className="flex justify-center">
@@ -322,7 +319,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Boosted User Engagement
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted text-justify mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           Engage your audience with interactive elements,
                           user-friendly navigation, and visually captivating
                           layouts to keep them coming back.
@@ -349,7 +346,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Continuous improvement
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted text-justify mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           Ensure your website stays aligned with the latest
                           trends and technologies through regular updates and
                           enhancements.
@@ -376,7 +373,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Flexible Team Expansion
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted text-justify mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           As your project grows, we have the expertise to
                           quickly onboard new team members when needed.
                         </p>
@@ -402,7 +399,7 @@ export function Insides() {
                         <h3 className="font-bold text-xl md:text-[1.3rem] ml-2">
                           Inclusive Collaboration
                         </h3>
-                        <p className="text-muted mt-3 dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2">
+                        <p className="text-muted text-justify mt-3 ml-2 rtl:ml-0 rtl:mr-2">
                           We foster a collaborative environment, ensuring your
                           input is valued every step of the way.
                         </p>

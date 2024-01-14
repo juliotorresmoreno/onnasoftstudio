@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import contactTemplate from "@/templates/contact";
@@ -100,11 +99,11 @@ export default function Index() {
                 support team is delighted to help you.
               </p>
             </div>
-            <div className="max-w-3xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 w-full">
+            <div className="max-w-3xl mx-auto rounded-lg border border-gray-200 bg-white shadow p-4 w-full">
               <form onSubmit={onSubmit}>
                 <div>
                   <textarea
-                    className="w-full h-96 border border-gray-200 rounded-lg p-4 dark:text-white"
+                    className="w-full h-96 border border-gray-200 rounded-lg p-4 focus:outline-0 focus:border-pink-100"
                     onChange={({ target }) => {
                       setDescription(target.value);
                     }}
@@ -116,10 +115,26 @@ export default function Index() {
                   <Dialog open={open} onOpenChange={setOpen}>
                     <DialogTrigger asChild>
                       <Button
-                        className="bg-primary text-white hover:bg-primary-2"
+                        className="bg-pink-600 text-lg text-white hover:bg-primary-2"
                         type="button"
                         onClick={onContinue}
                       >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="icon icon-tabler icon-tabler-terminal"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M5 7l5 5l-5 5" />
+                          <path d="M12 19l7 0" />
+                        </svg>
                         Continue
                       </Button>
                     </DialogTrigger>
@@ -161,7 +176,7 @@ export default function Index() {
                       </div>
                       <div>
                         <Button
-                          className="text-white w-full"
+                          className="text-white bg-pink-600 w-full"
                           disabled={!terms}
                           type="submit"
                           onClick={onSend}
@@ -186,7 +201,7 @@ export default function Index() {
         <Contact />
       </main>
 
-      <Footer />
+      
     </>
   );
 }

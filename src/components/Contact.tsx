@@ -14,7 +14,7 @@ export function Contact() {
           </h2>
         </div>
         <div className="grid sm:gap-y-8 lg:grid-cols-3 sm:grid-cols-2 gap-4 md:gap-6">
-          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
+          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6">
             <div className="text-xl font-bold">General support</div>
             <p className="text-muted mt-2">
               Chat with us for inquiries related to account management, website
@@ -22,7 +22,7 @@ export function Contact() {
               general questions about the website&apos;s functionality.
             </p>
           </div>
-          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
+          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6">
             <div className="text-xl font-bold">Contact sales</div>
             <p className="text-muted mt-2">
               Chat with us for questions about purchases, customization options,
@@ -30,7 +30,7 @@ export function Contact() {
               etc.
             </p>
           </div>
-          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6">
+          <div className="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6">
             <div className="text-xl font-bold">Technical support</div>
             <p className="text-muted mt-2">
               Chat with us when facing issues like template installation,

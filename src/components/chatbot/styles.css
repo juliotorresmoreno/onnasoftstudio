@@ -1,0 +1,20 @@
+#chat-component {
+  .chat-title {
+    background-color: #db2777;
+    color: white;
+  }
+
+  .close-chat svg {
+    color: white;
+  }
+
+  #open-chat {
+    background-color: #c2410c;
+  }
+
+  #chat-container {
+    width: calc(100vw - 50px);
+    min-width: 470px;
+    max-width: 768px;
+  }
+}

@@ -11,9 +11,6 @@ export function Features() {
       </div>
       <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-5xl">
         <div className="text-center mb-8 md:mb-12 md:mx-auto max-w-3xl">
-          <p className="font-bold dark:text-blue-200 text-base text-secondary tracking-wide uppercase">
-            Features
-          </p>
           <h2 className="font-bold leading-tighter font-heading tracking-tighter text-heading md:text-4xl text-3xl">
             What can you achieve with us?
           </h2>

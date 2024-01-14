@@ -4,7 +4,7 @@ import config from "@/config";
 
 export function About() {
   return (
-    <section className="relative not-prose scroll-mt-[72px]" id="about">
+    <section className="relative not-prose scroll-mt-[72px] bg-pink-600" id="about">
       <div
         className="absolute inset-0 pointer-events-none -z-[1]"
         aria-hidden="true"
@@ -15,8 +15,8 @@ export function About() {
         <div className="mx-auto max-w-7xl md:px-8 p-4">
           <div className="md:flex md:gap-16">
             <div className="md:basis-1/2 self-center">
-              <div className="text-lg dark:text-slate-400 mb-12">
-                <h3 className="font-bold dark:text-white text-2xl mb-2 sm:text-3xl tracking-tight">
+              <div className="text-lg text-white mb-12">
+                <h3 className="font-bold text-white text-2xl mb-2 sm:text-3xl tracking-tight">
                   About me
                 </h3>
                 <p className="text-justify">
@@ -71,7 +71,7 @@ export function About() {
                       <div className="rtl:ml-0 ml-2 rtl:mr-2 dark:text-white font-medium leading-6 text-lg">
                         <a
                           href={config.LINKEDIN}
-                          className="cursor-pointer hover:text-primary"
+                          className="cursor-pointer"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
@@ -100,7 +100,7 @@ export function About() {
                       <div className="rtl:ml-0 ml-2 rtl:mr-2 dark:text-white font-medium leading-6 text-lg">
                         <a
                           href={config.GITHUB}
-                          className="cursor-pointer hover:text-primary"
+                          className="cursor-pointer"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
@@ -141,7 +141,7 @@ export function About() {
                       <div className="rtl:ml-0 ml-2 rtl:mr-2 dark:text-white font-medium leading-6 text-lg">
                         <a
                           href={config.YOUTUBE}
-                          className="cursor-pointer hover:text-primary"
+                          className="cursor-pointer"
                           rel="noopener noreferrer"
                           target="_blank"
                         >

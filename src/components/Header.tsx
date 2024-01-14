@@ -17,14 +17,14 @@ export function Header() {
   };
   return (
     <header
-      className="mx-auto w-full border-b border-gray-50/0 ease-in-out flex-none sticky top-0 transition-[opacity] z-40"
+      className="mx-auto w-full border-b border-gray-50/0 ease-in-out flex-none sticky top-0 transition-[opacity] z-40 bg-white"
       id="header"
     >
       <div className="absolute inset-0" />
-      <div className="relative mx-auto max-w-7xl md:px-6 text-default md:flex md:justify-between px-3 py-3 w-full">
+      <div className="relative mx-auto max-w-7xl md:px-6 text-default md:flex md:justify-between px-3 py-3 w-ful">
         <div className="flex justify-between">
           <a href="/#" className="flex items-center font-bold">
-            <span className="font-bold dark:text-white text-2xl md:text-xl ml-2 rtl:ml-0 rtl:mr-2 self-center text-gray-900 whitespace-nowrap">
+            <span className="font-bold text-lg ml-2 rtl:ml-0 rtl:mr-2 self-center text-gray-900 whitespace-nowrap">
               <Image
                 alt=""
                 decoding="async"
@@ -80,33 +80,33 @@ export function Header() {
         >
           <ul className="flex flex-col font-medium md:flex-row md:self-center md:text-[0.9375rem] md:w-auto text-xl tracking-[0.01rem] w-full">
             <li>
-              <Link
+              <a
                 href="/#about"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 About Me
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="/#features"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Features
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 href="/#FAQS"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 FAQS
-              </Link>
+              </a>
             </li>
             <li>
               <Link
                 href="/contact"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Contact
               </Link>
@@ -114,7 +114,7 @@ export function Header() {
             <li>
               <Link
                 href="/blog"
-                className="flex dark:hover:text-white hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Blog
               </Link>
