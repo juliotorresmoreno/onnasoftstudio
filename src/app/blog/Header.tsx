@@ -8,10 +8,10 @@ export function BlogHeader() {
         Welcome to TechChillHub, where the world of technology meets laid-back
         discussions! Dive into a refreshing blend of informative yet casual
         articles exploring the latest tech trends, hacks, and gadgets. Whether
-        you're a seasoned tech enthusiast or a curious beginner, join us in
+        you&apos;re a seasoned tech enthusiast or a curious beginner, join us in
         unraveling the wonders of the digital realm. From tech news to hands-on
-        experiences, we're your go-to spot for a chill exploration of the
-        ever-evolving world of technology. Grab a virtual seat, relax, and let's
+        experiences, we&apos;re your go-to spot for a chill exploration of the
+        ever-evolving world of technology. Grab a virtual seat, relax, and let&apos;s
         embark on this tech journey together!
       </div>
     </header>
