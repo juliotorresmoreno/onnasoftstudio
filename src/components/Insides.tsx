@@ -6,7 +6,7 @@ import programmerSrc from "../assets/team.png";
 export function Insides() {
   return (
     <>
-      <section className="relative not-prose scroll-mt-[72px] bg-pink-600" id="insides">
+      <section className="relative not-prose scroll-mt-[72px] bg-violet-100" id="insides">
         <div
           className="absolute inset-0 pointer-events-none -z-[1]"
           aria-hidden="true"
@@ -15,21 +15,21 @@ export function Insides() {
         </div>
         <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl">
           <div className="text-center mb-8 md:mb-12 md:mx-auto lg:max-w-2xl max-w-xl sm:mx-auto">
-            <h2 className="text-white font-bold leading-tighter leading-tighter font-heading tracking-tighter text-heading mb-4 md:text-5xl text-4xl">
+            <h2 className="font-bold leading-tighter leading-tighter font-heading tracking-tighter text-heading mb-4 md:text-5xl text-4xl">
               Our creations: Coding magic for a digital kingdom.
             </h2>
           </div>
           <div className="mx-auto max-w-7xl md:px-8 p-4">
             <div className="md:flex md:gap-16 md:flex-row-reverse">
               <div className="md:basis-1/2 self-center">
-                <div className="text-lg text-white mb-12">
+                <div className="text-lg mb-12">
                   <h3 className="font-bold text-2xl mb-2 sm:text-3xl tracking-tight">
                     Building on modern foundations
                   </h3>
                   Gain a competitive advantage by incorporating industry leading
                   practices
                 </div>
-                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 text-white">
+                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 ">
                   <div>
                     <div className="flex flex-row max-w-none gap-1">
                       <div className="flex justify-center">
@@ -138,7 +138,7 @@ export function Insides() {
         </div>
       </section>
 
-      <section className="relative not-prose scroll-mt-[72px] bg-pink-600">
+      <section className="relative not-prose scroll-mt-[72px] bg-violet-100">
         <div
           className="absolute inset-0 pointer-events-none -z-[1]"
           aria-hidden="true"
@@ -148,11 +148,11 @@ export function Insides() {
         <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl lg:pt-0 md:pt-0 pt-0">
           <div className="mx-auto max-w-7xl md:px-8 p-4">
             <div className="md:flex md:gap-16">
-              <div className="md:basis-1/2 self-center text-white">
+              <div className="md:basis-1/2 self-center ">
                 <div className="text-lg mb-12">
                   Ensure your online presence truly represents you.
                 </div>
-                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 text-white">
+                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 ">
                   <div>
                     <div className="flex flex-row max-w-none">
                       <div className="flex justify-center">
@@ -285,7 +285,7 @@ export function Insides() {
         </div>
       </section>
 
-      <section className="relative not-prose scroll-mt-[72px] bg-pink-600">
+      <section className="relative not-prose scroll-mt-[72px] bg-violet-100">
         <div
           className="absolute inset-0 pointer-events-none -z-[1]"
           aria-hidden="true"
@@ -295,11 +295,11 @@ export function Insides() {
         <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-7xl lg:pt-0 md:pt-0 pt-0">
           <div className="mx-auto max-w-7xl md:px-8 p-4">
             <div className="md:flex md:gap-16 md:flex-row-reverse">
-              <div className="md:basis-1/2 self-center text-white">
+              <div className="md:basis-1/2 self-center ">
                 <div className="text-lg mb-12">
                   Designed to foster growth and success.
                 </div>
-                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 text-white">
+                <div className="mx-auto gap-8 grid gap-y-4 md:gap-y-8 ">
                   <div>
                     <div className="flex flex-row max-w-none">
                       <div className="flex justify-center">

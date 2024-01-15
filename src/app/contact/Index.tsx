@@ -115,7 +115,7 @@ export default function Index() {
                   <Dialog open={open} onOpenChange={setOpen}>
                     <DialogTrigger asChild>
                       <Button
-                        className="bg-pink-600 text-lg text-white hover:bg-primary-2"
+                        className="btn-primary bg-violet-600 border-violet-600 hover:bg-violet-800 w-full sm:mb-0"
                         type="button"
                         onClick={onContinue}
                       >
@@ -176,7 +176,7 @@ export default function Index() {
                       </div>
                       <div>
                         <Button
-                          className="text-white bg-pink-600 w-full"
+                           className="btn-primary bg-violet-600 border-violet-600 hover:bg-violet-800 w-full sm:mb-0"
                           disabled={!terms}
                           type="submit"
                           onClick={onSend}

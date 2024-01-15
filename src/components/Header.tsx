@@ -82,7 +82,7 @@ export function Header() {
             <li>
               <a
                 href="/#about"
-                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-violet-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 About Me
               </a>
@@ -90,7 +90,7 @@ export function Header() {
             <li>
               <a
                 href="/#features"
-                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-violet-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Features
               </a>
@@ -98,7 +98,7 @@ export function Header() {
             <li>
               <a
                 href="/#FAQS"
-                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-violet-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 FAQS
               </a>
@@ -106,7 +106,7 @@ export function Header() {
             <li>
               <Link
                 href="/contact"
-                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-violet-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Contact
               </Link>
@@ -114,7 +114,7 @@ export function Header() {
             <li>
               <Link
                 href="/blog"
-                className="flex hover:text-pink-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
+                className="flex hover:text-violet-600 text-lg hover:text-link items-centers px-4 py-3 font-bold	"
               >
                 Blog
               </Link>

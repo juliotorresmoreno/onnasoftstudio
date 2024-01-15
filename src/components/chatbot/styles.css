@@ -1,6 +1,6 @@
 #chat-component {
   .chat-title {
-    background-color: #db2777;
+    background-color: #7c3aed;
     color: white;
   }
 
@@ -9,7 +9,7 @@
   }
 
   #open-chat {
-    background-color: #c2410c;
+    background-color: #7c3aed;
   }
 
   #chat-container {

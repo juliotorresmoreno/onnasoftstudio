@@ -22,7 +22,7 @@ export function CallToAction() {
           <div className="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">
             <div className="flex w-full sm:w-auto">
               <a
-                className="btn-primary bg-pink-600 border-pink-600 hover:bg-pink-800 w-full sm:mb-0"
+                className="btn-primary bg-violet-600 border-violet-600 hover:bg-violet-800 w-full sm:mb-0"
                 rel="noopener noreferrer"
                 href="/contact"
               >

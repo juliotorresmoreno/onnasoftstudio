@@ -1,6 +1,6 @@
 export function Faqs() {
   return (
-    <section className="relative not-prose scroll-mt-[72px] bg-pink-600" id="FAQS">
+    <section className="relative not-prose scroll-mt-[72px] bg-violet-100" id="FAQS">
       <div
         className="absolute inset-0 pointer-events-none -z-[1]"
         aria-hidden="true"
@@ -8,7 +8,7 @@ export function Faqs() {
         <div className="absolute inset-0 bg-blue-50 " />
       </div>
       <div className="relative mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default max-w-6xl">
-        <div className="text-center mb-8 md:mb-12 md:mx-auto max-w-3xl text-white">
+        <div className="text-center mb-8 md:mb-12 md:mx-auto max-w-3xl">
           <h2 className="font-bold leading-tighter font-heading tracking-tighter text-heading md:text-4xl text-3xl">
             Frequently Asked Questions
           </h2>
@@ -18,7 +18,7 @@ export function Faqs() {
             Your Questions.
           </p>
         </div>
-        <div className="mx-auto gap-8 grid sm:grid-cols-2 md:gap-y-12 gap-y-8 text-white">
+        <div className="mx-auto gap-8 grid sm:grid-cols-2 md:gap-y-12 gap-y-8">
           <div>
             <div className="flex flex-row max-w-none">
               <div className="flex justify-center">

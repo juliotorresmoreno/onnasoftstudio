@@ -4,7 +4,7 @@ import config from "@/config";
 
 export function About() {
   return (
-    <section className="relative not-prose scroll-mt-[72px] bg-pink-600" id="about">
+    <section className="relative not-prose scroll-mt-[72px] bg-violet-100" id="about">
       <div
         className="absolute inset-0 pointer-events-none -z-[1]"
         aria-hidden="true"
@@ -15,8 +15,8 @@ export function About() {
         <div className="mx-auto max-w-7xl md:px-8 p-4">
           <div className="md:flex md:gap-16">
             <div className="md:basis-1/2 self-center">
-              <div className="text-lg text-white mb-12">
-                <h3 className="font-bold text-white text-2xl mb-2 sm:text-3xl tracking-tight">
+              <div className="text-lg mb-12">
+                <h3 className="font-bold text-2xl mb-2 sm:text-3xl tracking-tight">
                   About me
                 </h3>
                 <p className="text-justify">
